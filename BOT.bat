@@ -1,8 +1,11 @@
 @echo off
 for /F "tokens=2" %%i in ('date /t') do set mydate=%%i
 set mytime=%time%
+set name=Adam Yamout
 :loop
 set /p input="> "
+echo %input%|find /i "lol" >nul && echo What's so funny?
+echo %input%|find /i "hi" >nul && echo Hi, %name%
 echo %input%|find /i "hello" >nul && echo Hi, Happy %mydate%!
 echo %input%|find /i "date" >nul && echo The date is %mydate%
 echo %input%|find /i "test" >nul && echo STATUS: 84 modules loaded
@@ -16,7 +19,7 @@ echo %input%|find /i "bye" >nul && (echo what a pity, See you! & goto :eof)
 echo %input%|find /i "who does adam like" >nul && goto password
 echo %input%|find /i "president" >nul && echo The current president is Donald Trump
 echo %input%|find /i "who are you" >nul && echo My Name is Olivia!
-echo %input%|find /i "who am i" >nul && echo You are Adam Yamout
+echo %input%|find /i "who am i" >nul && echo You are %name%
 echo %input%|find /i "how are you" >nul && echo I'm doing well, Thank You. 
 echo %input%|find /i "are you bad" >nul && echo My goal is to inprove the life of all authorized personnel 
 echo %input%|find /i "are you evil" >nul && echo My goal is to inprove the life of all authorized personnel 
