@@ -37,6 +37,7 @@ echo %input%|find /i "hey" >nul && echo Sup Homie! ¯\_(ツ)_/¯
 echo %input%|find /i "who is this" >nul && echo Ugly
 echo %input%|find /i "lockdown" >nul && start rundll32.exe user32.dll, LockWorkStation
 echo %input%|find /i "you are bad" >nul && echo Ima be a jon song here and say NO U!
+echo %input%|find /i "no" >nul && echo no you
 REM choose your keywords wisely...
 goto :loop
 REM SPACE
