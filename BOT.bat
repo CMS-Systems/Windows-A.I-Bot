@@ -17,7 +17,7 @@ echo %input%|find /i "my name is" >nul && echo That's a nice name.
 echo %input%|find /i "weather" >nul && echo This module is not compleate, please enable beta.weather
 echo %input%|find /i "bye" >nul && (echo what a pity, See you! & goto :eof)
 echo %input%|find /i "who does adam like" >nul && goto password
-echo %input%|find /i "president" >nul && echo The current president is Donald Trump
+echo %input%|find /i "president" >nul && echo The current president is Joe Biden
 echo %input%|find /i "who are you" >nul && echo My Name is Olivia!
 echo %input%|find /i "who am i" >nul && echo You are %name%
 echo %input%|find /i "how are you" >nul && echo I'm doing well, Thank You. 
